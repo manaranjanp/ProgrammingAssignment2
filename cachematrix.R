@@ -33,7 +33,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## in cache or it calculates and stores it in cache and then return it. 
 ## Assumption: The function assumes that the matrix is invertible.
 ## Usage:  cm <- makeCacheMatrix( matrix( 1:16, 4, 4) )
-##         cmi <-  cacheSolve( cm )
+##         cmi <-  cacheSolve( cm )  // calculates, stored and retruns the matrix inverse 
 ## The matrix inverse can be retrived using cm$getinverse()
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
