@@ -43,7 +43,7 @@ cacheSolve <- function(x, ...) {
                 message("getting cached data")
                 return(minv)
         }
-        
+		
 		minv <- solve( x$get() )
         x$setinverse(minv)
         minv
